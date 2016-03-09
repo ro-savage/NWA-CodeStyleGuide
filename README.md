@@ -47,8 +47,8 @@ Mostly just follow [Airbnb React/JSX Style guide](https://github.com/airbnb/java
 **Always use `() => { return }`:** Always use the `() => {}` method even when it isn't needed for clarity you are creating a function. 
 * Prefer `(number) => { return 2 * number}` over `number => 2 * number`
 
-**What about currying?:** For currying you can use the shorter version without a *return* or *{}*. For example
-`export default (defaultstore) => (next) => (action) => { return next(action) }`
+**What about currying?:** For currying you can use the shorter version without a *return* or *{}*. e.g.
+* `export default (defaultstore) => (next) => (action) => { return next(action) }`
 
 **Prefer descriptive function names:** It is better to use a very long function name that describes what something is doing, than a short one that is harder to understand what is going on. e.g. 
 * Prefer `StringOfNumbersToArrayOfInts` over `makeInts`
