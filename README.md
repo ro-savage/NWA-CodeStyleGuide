@@ -50,6 +50,9 @@ Prefer
 over
 `number => 2 * number`
 
+**What about currying?:** For currying you can use the shorter version without a *return* or *{}*. For example
+`export default (defaultstore) => (next) => (action) => { return next(action) }`
+
 **Prefer descriptive function names:** It is better to use a very long function name that describes what something is doing, than a short one that is harder to understand what is going on. e.g. prefer `StringOfNumbersToArrayOfInts` over `makeInts`
 
 **Not covered here or AirBnB:** If it's not covered. Then think about adding it here, or just do whatever. It probably isn't important enough to worry about.
