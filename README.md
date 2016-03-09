@@ -26,9 +26,9 @@ We are aiming for 90% test coverage. If you believe no test is needed, create a 
 
 ## Pull Requests / Git Flow
 We are using Git Flow. All changes should be in a branch. All changes should be code reviewed and approved. All code should have been reviewed. A comment made and pass automated unit testing. 
-**Before release** end-to-end tests not required.
-**Minor changes** don't require end-to-end tests. 
-**Major changes** should be run through end-to-end.
+* **Before release** end-to-end tests not required.
+* **Minor changes** don't require end-to-end tests. 
+* **Major changes** should be run through end-to-end.
 
 ## Code Style
 Mostly just follow [Airbnb React/JSX Style guide](https://github.com/airbnb/javascript/tree/master/react)
@@ -45,15 +45,13 @@ Mostly just follow [Airbnb React/JSX Style guide](https://github.com/airbnb/java
 **Always bind your component methods:** A react component made with a class wont auto bind. Therefore always bind any method in a react component, even if it isn't needed.
 
 **Always use `() => { return }`:** Always use the `() => {}` method even when it isn't needed for clarity you are creating a function. 
-Prefer 
-`(number) => { return 2 * number}` 
-over
-`number => 2 * number`
+* Prefer `(number) => { return 2 * number}` over `number => 2 * number`
 
 **What about currying?:** For currying you can use the shorter version without a *return* or *{}*. For example
 `export default (defaultstore) => (next) => (action) => { return next(action) }`
 
-**Prefer descriptive function names:** It is better to use a very long function name that describes what something is doing, than a short one that is harder to understand what is going on. e.g. prefer `StringOfNumbersToArrayOfInts` over `makeInts`
+**Prefer descriptive function names:** It is better to use a very long function name that describes what something is doing, than a short one that is harder to understand what is going on. e.g. 
+* Prefer `StringOfNumbersToArrayOfInts` over `makeInts`
 
 **Not covered here or AirBnB:** If it's not covered. Then think about adding it here, or just do whatever. It probably isn't important enough to worry about.
 
