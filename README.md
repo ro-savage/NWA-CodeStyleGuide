@@ -25,7 +25,7 @@ We are aiming for 90% test coverage. If you believe no test is needed, create a 
 **TDD:** Test can be written before or after. Whatever works for you.
 
 ## Pull Requests / Git Flow
-We are using Git Flow. All changes should be in a branch. All changes should be code reviewed and approved. All code should have been reviewed. A comment made and pass automated unit testing. 
+We are using Git Flow. All changes should be in a branch. All changes should be code reviewed and approved. All code should have been back merged with develop, reviewed, comments made by reviewer and passed automated unit testing *before* the PR is merged.
 * **Before release** end-to-end tests not required.
 * **Minor changes** don't require end-to-end tests. 
 * **Major changes** should be run through end-to-end.
