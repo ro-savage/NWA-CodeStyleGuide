@@ -1,20 +1,21 @@
 # N.W.A Code Guide
 A rough guide to coding with the Node With Attitude team
 ## Code Linting
-We are using **[Standard](https://github.com/feross/standard)** with the [standard-react plugin](https://github.com/feross/eslint-config-standard-react) for JSX/React.
+We are using **[AirBnB style guide](https://github.com/airbnb/javascript)** with JSX/React.
 
 Install the relevant [plugin](https://github.com/feross/standard#text-editor-plugins) for your IDE and point your IDE at the .eslintrc file, and just type away correcting what needs to be corrected.
 
 **Major points:** No semicolons. 2 space indentation. Spaces after everything. No unused vars. use `===` except for `==` null to check for `null || undefined`
 
-**But what are the rules!?!** No one read rules. Let your linter tell you the rules, you'll remember it better this way. Google or ask if you are unsure of the meaning.
+**But what are the rules!?!** No one read rules. Let your linter tell you the rules, you'll remember it better this way. However if you do want to go through them, check out the **[AirBnB style guide](https://github.com/airbnb/javascript)** 
 
 **Autofix:** Run `npm run lint:fix`  to autofix stuff. And then turn on auto linting in your ide. 
 
 **Help:**  
-You can temporarily disable linting using standard `/* eslint-disable no-use-before-define */` at the top of file.
+You can temporarily disable linting using standard `/* eslint-disable no-use-before-define */` at the top of file. 
+Permanently disable a line with `/* eslint-disable-lint no-use-before-defin */`
 
- If you need globals for some reason, use `/* global myVar1, myVar2 */`
+If you need globals for some reason, use `/* global myVar1, myVar2 */`
 
 ## Test Coverage
 We are aiming for 90% test coverage. If you believe no test is needed, create a name.spec.js file and create a test that just returns true with a note that says 'test is unneeded. Have this confirmed by a teammate. 
